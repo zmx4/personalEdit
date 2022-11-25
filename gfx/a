@@ -1,0 +1,66 @@
+min_qwq_up = {
+	if = {
+		limit = {
+			has_idea = min_qwq_1
+		}
+		add_ideas = min_qwq_2
+		remove_ideas = min_qwq_1
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_2
+		}
+		add_ideas = min_qwq_3
+		remove_ideas = min_qwq_2
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_3
+		}
+		add_ideas = min_qwq_4
+		remove_ideas = min_qwq_3
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_4
+		}
+		add_ideas = min_qwq_5
+		remove_ideas = min_qwq_4
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_1
+		}
+		add_ideas = min_qwq_1
+		remove_ideas = military_qwq_1
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_2
+		}
+		add_ideas = military_qwq_1
+		remove_ideas = military_qwq_2
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_3
+		}
+		add_ideas = military_qwq_2
+		remove_ideas = military_qwq_3
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_4
+		}
+		add_ideas = military_qwq_3
+		remove_ideas = military_qwq_4
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_5
+		}
+		add_ideas = military_qwq_4
+		remove_ideas = military_qwq_5
+	}
+	
+}

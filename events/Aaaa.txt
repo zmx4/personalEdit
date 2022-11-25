@@ -1,0 +1,339 @@
+add_namespace = OnStartUp
+country_event ={     #
+	id = OnStartUp.1
+	title = OnStartUp.1.t
+	desc = OnStartUp.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = OnStartUp.1.1
+		ai_chance = { base = 1 }
+		country_event = OnStartUp.2
+	}
+	
+	
+	option = { 
+		name = OnStartUp.1.2
+		ai_chance = { base = 1 }
+		country_event = OnStartUp.3
+	}
+
+	option = { 
+		name = OnStartUp.1.3
+		ai_chance = { base = 1 }
+		country_event = OnStartUp.4
+	}
+
+	option = { 
+		name = OnStartUp.1.4
+		ai_chance = { base = 1 }
+		
+	}
+
+	option = { 
+		name = OnStartUp.1.5
+		ai_chance = { base = 1 }
+		add_dynamic_modifier = dynamic_modifier_qwq 
+	}
+	
+	option = { 
+		name = OnStartUp.1.6
+		ai_chance = { base = 1 }
+		add_tech_bonus = {
+			name = strengthen_heavy_industry
+			ahead_reduction = 2
+			uses = 2
+			category = artillery
+			category = support_tech
+			category = industry
+			category = infantry_weapons 
+		}
+	}
+	option = { 
+		name = OnStartUp.1.6
+		ai_chance = { base = 1 }
+		set_technology = { tech_better_pasd = 1}
+		set_technology = { tech_better_pasda = 1}
+	}
+}
+country_event ={     #
+	id = OnStartUp.2
+	title = OnStartUp.2.t
+	desc = OnStartUp.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = OnStartUp.2.1
+		ai_chance = { base = 1 }
+		add_ideas = military_qwq_1
+	}
+
+	option = { 
+		name = OnStartUp.2.2
+		ai_chance = { base = 1 }
+	}
+}
+
+country_event ={     #
+	id = OnStartUp.3
+	title = OnStartUp.3.t
+	desc = OnStartUp.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = OnStartUp.3.1
+		ai_chance = { base = 1 }
+		division_template = {
+			name = "Mechanized Reserve Divisíon"
+			division_names_group = MEC_01
+			is_locked = no
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				artillery_brigade = { x = 1 y = 4 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "division_template=\"Mechanized Reserve Divisíon\" start_experience_factor = 0.2 start_equipment_factor = 1.0" 
+				owner = ROOT
+				count = 10
+				prioritize_location = 6521
+			}
+		}
+	}
+	
+	option = { 
+		name = OnStartUp.3.2
+		ai_chance = { base = 1 }
+
+	}
+	option = { 
+		name = OnStartUp.3.3
+		ai_chance = { base = 1 }
+		army_qwq_scri = YES
+	}
+	
+}
+country_event ={     #
+	id = OnStartUp.4
+	title = OnStartUp.4.t
+	desc = OnStartUp.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = OnStartUp.4.1
+		ai_chance = { base = 1 }
+		set_nationality = {
+			target_country = ROOT
+			character = Tick_high_command
+		}
+		set_nationality = {
+			target_country = ROOT
+			character =zhugeruichao_high_command
+		}
+		set_nationality = {
+			target_country = ROOT
+			character = cheber_high_command
+		}
+		set_nationality = {
+			target_country = ROOT
+			character = Tick
+		}
+		set_nationality = {
+			target_country = ROOT
+			character = zhugeruichao
+		}
+		set_nationality = {
+			target_country = ROOT
+			character = cheber
+		}
+	}
+
+	option = { 
+		name = OnStartUp.4.2
+		ai_chance = { base = 1 }
+		generate_character = {
+			token_base = army_chief_defensive_1
+			name = TickZhong_least
+			field_marshal = { 
+				legacy_id = 251452
+				traits = { 
+					erzhong_1
+					skilled_staffer
+				}
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 5
+			}
+			advisor = {  #内阁role（角色）
+				slot = high_command #和以前的人物内阁一样
+				idea_token = Tick_high_command #内阁名字，用于检测has_idea条件
+				#以下与旧版内阁一样
+				traits = { army_commando_3 }
+				ai_will_do = {
+					always = no
+				}
+			}
+		}
+	}
+}
+
+country_event ={     #
+	id = OnStartUp.5
+	title = OnStartUp.5.t
+	desc = OnStartUp.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = OnStartUp.5.1
+		ai_chance = { base = 1 }
+		every_state = {
+			limit = { 
+				is_owned_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	
+}
+country_event ={     #
+	id = OnStartUp.6
+	title = OnStartUp.6.t
+	desc = OnStartUp.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = OnStartUp.6.1
+		ai_chance = { base = 1 }
+		set_technology = { tech_better_pasd = 1}
+		set_technology = { tech_better_pasda = 1}
+	}
+}
+country_event ={     #
+	id = DeBugq.21
+	title = DeBug.21.t
+	desc = DeBug.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = DeBug.21.1
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			activate_targeted_decision = { target = SHX decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = SQI decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = CHI decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = GXC decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = SZC decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = YUN decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = HNN decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = ANQ decision = QIE_attack_warlord }
+			activate_targeted_decision = { target = LEP decision = QIE_attack_warlord }
+		}
+
+		hidden_effect = {
+			activate_targeted_decision = { target = ROOT decision = QIE_prep_chahar }
+			if = {
+				limit = {
+					SHX = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						has_government = paternal_autocrat
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				activate_targeted_decision = { target = SHX decision = QIE_reach_out_to_Yan }
+			}
+			if = {
+				limit = { country_exists = LEP }
+				activate_targeted_decision = { target = LEP decision = QIE_reach_out_to_lep }
+				activate_targeted_decision = { target = LEP decision = QIE_request_LEP_support_during_FNG_war }
+			}
+			if = {
+				limit = {
+					HNN = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						is_ruled_by_pro_zhili = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				activate_targeted_decision = { target = HNN decision = QIE_reach_out_to_hengti }
+			}
+			if = {
+				limit = {
+					SQI = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						is_ruled_by_pro_zhili = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				activate_targeted_decision = { target = SQI decision = QIE_reach_out_to_song_if_zhili }
+			}
+			if = {
+				limit = {
+					SZC = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						is_ruled_by_pro_zhili = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				activate_targeted_decision = { target = SZC decision = QIE_reach_out_to_sichuan }
+			}
+			if = {
+				limit = {
+					GXC = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						is_ruled_by_pro_zhili = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				activate_targeted_decision = { target = GXC decision = QIE_reach_out_to_ma_ji }
+			}
+			if = {
+				limit = {
+					ANQ = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						is_ruled_by_pro_zhili = yes
+						NOT = { has_war_with = ROOT }
+					}
+				}
+				activate_targeted_decision = { target = ANQ decision = QIE_reach_out_to_anqing_before }
+			}
+		}
+	}
+}
