@@ -10,7 +10,7 @@ characters={
 		advisor = {  #内阁role（角色）
 			slot = political_advisor #和以前的人物内阁一样
 			idea_token = Tick_high_command #内阁名字，用于检测has_idea条件
-			#以下与旧版内阁一样
+			
 			traits = { tickzhong_1 }
 			ai_will_do = {
 				always = no
