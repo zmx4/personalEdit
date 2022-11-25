@@ -1,0 +1,282 @@
+AAA_PAIXI ={
+	if = {
+		########Franch
+		limit = {
+			tag = fra
+			
+		}
+		custom_effect_tooltip = FRA_laissez_faire_tt
+		hidden_effect = {
+			add_to_variable = { var = FRA_French_Industrialists_attitude value = 1 }
+			add_to_variable = { var = FRA_French_Industrialists_factory_output value = 1 }
+			add_to_variable = { var = FRA_French_Industrialists_stability value = 1 }
+			add_to_variable = { var = FRA_French_Industrialists_political_power_gain value = 1 }
+			FRA_political_instability_update_effect = yes	
+		}
+		hidden_effect = {
+			add_to_variable = { var = FRA_CGT_influence value = 1 }
+			subtract_from_variable = { var = FRA_French_Industrialists_influence value = 1 }
+			add_to_variable = { var = FRA_CGT_attitude value = 1 }
+			add_to_variable = { var = FRA_CGT_stability value = 1 }
+			add_to_variable = { var = FRA_CGT_factory_output value = 1 }
+			subtract_from_variable = { var = FRA_French_Industrialists_political_power_gain value = 1 }
+			FRA_political_instability_update_effect = yes
+		}	
+		hidden_effect = {
+			add_to_variable = { var = FRA_National_Bloc_attitude value = 1 }
+			add_to_variable = { var = FRA_National_Bloc_factory_output value = 1 }
+			add_to_variable = { var = FRA_National_Bloc_stability value = 1 }
+			add_to_variable = { var = FRA_National_Bloc_political_power_gain value = 1 }
+			FRA_political_instability_update_effect = yes
+		}
+		hidden_effect = {
+			add_to_variable = { var = FRA_French_Army_attitude value = 6 }
+			add_to_variable = { var = FRA_French_Army_factory_output value = 6 }
+			add_to_variable = { var = FRA_French_Army_stability value = 6 }
+			add_to_variable = { var = FRA_French_Army_political_power_gain value = 6 }
+			FRA_political_instability_update_effect = yes
+		}
+	}
+	######USA
+	else_if = {
+		limit = {
+			tag = usa
+		}
+		hidden_effect = {
+			add_to_variable = { var = USA_GM_Dupont_attitude value = 1 }
+			add_to_variable = { var = USA_GM_Dupont_civilian_construction_speed value = 1 }
+			USA_political_instability_update_effect = yes
+		}
+		hidden_effect = {
+			add_to_variable = { var = USA_Public_attitude value = 1 }
+			add_to_variable = { var = USA_Public_political_power_gain value = 1 }
+			add_to_variable = { var = USA_Public_stability value = 1 }
+			USA_political_instability_update_effect = yes
+		}
+		hidden_effect = {
+			add_to_variable = { var = USA_JPMorgan_stability value = 1 }
+			add_to_variable = { var = USA_JPMorgan_consumer_goods value = 1 }
+			add_to_variable = { var = USA_JPMorgan_attitude value = 1 }
+			USA_political_instability_update_effect = yes
+		}
+		hidden_effect = {
+			add_to_variable = { var = USA_Ford_Chrysler_attitude value = 1 }
+			add_to_variable = { var = USA_Ford_Chrysler_civilian_construction_speed value = 1 }
+			USA_political_instability_update_effect = yes4
+		}
+		hidden_effect = {
+			add_to_variable = { var = USA_Kaiser_dockyard_output value = 3 }
+			add_to_variable = { var = USA_Kaiser_attitude value = 1 }
+			add_to_variable = { var = USA_Kaiser_influence value = 1 }
+			USA_political_instability_update_effect = yes
+		}
+	}
+}
+
+army_qwq_scri = {
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"qw\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 4
+			prioritize_location = 11506
+		}
+	}
+}
+army21_qwq_scri = {
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Shandishi\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 4
+			prioritize_location = 11506
+		}
+	}
+}
+add_resource_qwq ={
+	capital_scope= {
+		add_resource = {
+			type = oil
+			amount = 200
+		}
+		add_resource = {
+			type =rubber
+			amount = 200
+		}
+		add_resource = {
+			type =steel 
+			amount = 200
+		}
+		add_resource = {
+			type =aluminium
+			amount = 200
+		}
+		add_resource = {
+			type =tungsten
+			amount = 200
+		}
+		add_resource= {
+			type =chromium 
+			amount = 200
+		}
+	}
+}
+
+research_qwq_WSAS ={
+	
+	add_tech_bonus = {
+		name = border_defense
+		category = support_tech
+	 	uses = 1
+	 	bonus = 3
+	}
+
+	add_tech_bonus = {
+		name = border_defense
+		category = artillery
+		uses = 1
+		bonus = 3
+	}
+
+	add_tech_bonus = {
+		name =  border_defense
+		category = infantry_weapons
+		uses = 1
+		bonus = 3
+	}
+
+}
+
+military_qwq_up = {
+	if = {
+		limit = {
+			has_idea = military_qwq_1
+		}
+		add_ideas = military_qwq_2
+		remove_ideas = military_qwq_1
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_2
+		}
+		add_ideas = military_qwq_3
+		remove_ideas = military_qwq_2
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_3
+		}
+		add_ideas = military_qwq_4
+		remove_ideas = military_qwq_3
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_4
+		}
+		add_ideas = military_qwq_5
+		remove_ideas = military_qwq_4
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_1
+		}
+		add_ideas = military_qwq_1
+		remove_ideas = min_qwq_1
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_2
+		}
+		add_ideas = min_qwq_1
+		remove_ideas = min_qwq_2
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_3
+		}
+		add_ideas = min_qwq_2
+		remove_ideas = min_qwq_3
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_4
+		}
+		add_ideas = min_qwq_3
+		remove_ideas = min_qwq_4
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_5
+		}
+		add_ideas = min_qwq_4
+		remove_ideas = min_qwq_5
+	}
+	
+}
+
+min_qwq_up = {
+	if = {
+		limit = {
+			has_idea = min_qwq_1
+		}
+		add_ideas = min_qwq_2
+		remove_ideas = min_qwq_1
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_2
+		}
+		add_ideas = min_qwq_3
+		remove_ideas = min_qwq_2
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_3
+		}
+		add_ideas = min_qwq_4
+		remove_ideas = min_qwq_3
+	}
+	else_if = {
+		limit = {
+			has_idea = min_qwq_4
+		}
+		add_ideas = min_qwq_5
+		remove_ideas = min_qwq_4
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_1
+		}
+		add_ideas = min_qwq_1
+		remove_ideas = military_qwq_1
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_2
+		}
+		add_ideas = military_qwq_1
+		remove_ideas = military_qwq_2
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_3
+		}
+		add_ideas = military_qwq_2
+		remove_ideas = military_qwq_3
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_4
+		}
+		add_ideas = military_qwq_3
+		remove_ideas = military_qwq_4
+	}
+	else_if = {
+		limit = {
+			has_idea = military_qwq_5
+		}
+		add_ideas = military_qwq_4
+		remove_ideas = military_qwq_5
+	}
+	
+}

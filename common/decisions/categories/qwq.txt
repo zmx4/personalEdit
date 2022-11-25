@@ -1,0 +1,6 @@
+qwq = {
+	allowed = {
+		is_ai = no
+	}
+	priority = 10
+}

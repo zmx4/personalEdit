@@ -1,0 +1,6 @@
+yubei = {
+	allowed = {
+		is_ai = no
+	}
+	priority = 30
+}

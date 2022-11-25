@@ -1,0 +1,5 @@
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 60
+
+NCountry = {
+    AIR_SUPPLY_CONVERSION_SCALE = 0.2
+}

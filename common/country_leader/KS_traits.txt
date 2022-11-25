@@ -1,0 +1,28 @@
+leader_traits = {
+	tickzhong_1 = {
+		random = no
+		stability_weekly = 0.04
+		war_support_weekly = 0.02
+		political_power_factor = 0.25
+		army_org_factor = 10
+	}
+	
+	zhugeruichao_1= {
+		random = no
+		production_speed_buildings_factor = 0.15
+		production_speed_industrial_complex_factor = 0.2
+	}
+	
+	tanguan= {
+		random = no
+		consumer_goods_factor = -0.1
+		industrial_capacity_factory = -0.05
+		
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.15
+			}
+		}
+	}
+}

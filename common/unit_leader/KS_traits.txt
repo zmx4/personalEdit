@@ -1,0 +1,34 @@
+leader_traits = {
+	erzhong_1 = { 
+		type = { land navy }
+		trait_type = personality_trait
+		
+		field_marshal_modifier = {
+			max_army_group_size = 2
+		}
+
+		modifier = {
+			terrain_penalty_reduction = 0.30
+			acclimatization_cold_climate_gain_factor = 0.40
+		}
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+
+	}
+	
+	erzhong_2 = { 
+		type = { land navy }
+		trait_type = personality_trait
+		
+		modifier = {
+			org_loss_when_moving = -0.30
+			land_reinforce_rate = 0.02
+		}
+
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+	}
+}

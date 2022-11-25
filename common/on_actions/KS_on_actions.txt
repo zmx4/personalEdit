@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup ={
+		effect = {
+			IF ={
+				limit={
+					ROOT = {is_ai=no}
+					not = {
+						has_country_flag = firstkaiju
+					}
+				}
+				ROOT ={
+					country_event = OnStartUp.1
+				}
+			}
+		}
+	}
+}

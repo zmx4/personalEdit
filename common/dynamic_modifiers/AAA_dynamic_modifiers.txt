@@ -1,0 +1,6 @@
+dynamic_modifier_qwq = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	political_power_gain = var_qwq_AAA_political_power_gain
+	production_factory_start_efficiency_factor = var_qwq_AAA_production_factory_start_efficiency_factor
+}

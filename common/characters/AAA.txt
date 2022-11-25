@@ -1,0 +1,135 @@
+characters={
+	Tick_high_command={
+		name = Tick_high_command
+		portraits={
+			army = { 
+				large="gfx/leaders/creat/20211210120917.jpg"
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+		advisor = {  #内阁role（角色）
+			slot = political_advisor #和以前的人物内阁一样
+			idea_token = Tick_high_command #内阁名字，用于检测has_idea条件
+			#以下与旧版内阁一样
+			traits = { tickzhong_1 }
+			ai_will_do = {
+				always = no
+			}
+		}
+	}
+	Tick= {
+		name = TickZhong_least
+		portraits={
+			army = { 
+				large="gfx/leaders/creat/20211210120917.jpg"
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+		country_leader = {
+			desc = "TickZhong_least_desc"
+			ideology = radical_socialist_subtype
+		}
+		field_marshal = { 
+			legacy_id = 251452
+			traits = { 
+				erzhong_1
+				skilled_staffer
+				expert_delegator
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		
+	}
+	zhugeruichao_high_command = {
+		name = zhugeruichao_high_command
+		portraits={
+			army = {   
+				large="gfx/leaders/creat/20220120191647.jpg" 
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+		advisor = {  #内阁role（角色）
+			slot = political_advisor #和以前的人物内阁一样
+			idea_token = zhugeruichao_high_command #内阁名字，用于检测has_idea条件
+			#以下与旧版内阁一样
+			traits = { zhugeruichao_1 }
+			ai_will_do = {
+				always = no
+			}
+		}
+	}
+    zhugeruichao = {
+		name = zhuge
+		portraits={
+			army = {   
+				large="gfx/leaders/creat/20220120191647.jpg" 
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+		country_leader = {
+			desc = "zhugeruichao_1"
+			ideology = radical_socialist_subtype
+		}
+		corps_commander = {
+			traits = { 
+				erzhong_2 
+				panzer_leader
+				armor_officer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		
+	}
+	cheber_high_command = {
+		name = cheber_high_command
+		portraits={
+			army = {   
+				large="gfx/leaders/creat/C07C31384F5C5FFB4A893252CEA361C0.jpg"
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+		advisor = {  #内阁role（角色）
+			slot = political_advisor #和以前的人物内阁一样
+			idea_token = cheber_high_command #内阁名字，用于检测has_idea条件
+			#以下与旧版内阁一样
+			traits = { tanguan }
+			ai_will_do = {
+				always = no
+			}
+		}
+	}
+    cheber = {
+		name = cheber
+		portraits={
+			army = {   
+				large="gfx/leaders/creat/C07C31384F5C5FFB4A893252CEA361C0.jpg"
+				small="GFX_idea_generic_navy_african_3"
+			}
+		}
+		country_leader = {
+			desc = "cheber_desc"
+			ideology = radical_socialist_subtype
+		}
+		corps_commander = {
+			traits = { 
+				erzhong_2
+				trait_mountaineer
+				winter_specialist
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		
+	}
+}

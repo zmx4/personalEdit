@@ -1,0 +1,273 @@
+political_actions = {
+	TS_tech_steal = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+			#num_of_operatives > 2
+			#custom_trigger_tooltip = {
+				tooltip = tech_stab_require
+				#OR = { 
+				#	AND = {
+				#		#has_country_flag = ignore_year_limit 
+				#		OR = {
+				#			is_researching_technology = concentrated_industry
+				#			is_researching_technology = concentrated_industry2
+				#			is_researching_technology = concentrated_industry3
+				#			is_researching_technology = concentrated_industry4
+				#			is_researching_technology = concentrated_industry5
+				#			is_researching_technology = concentrated_industry_a
+				#			is_researching_technology = concentrated_industry_b
+				#			is_researching_technology = concentrated_industry_c
+				#			is_researching_technology = concentrated_industry_d
+				#			is_researching_technology = modern_industry1
+				#			is_researching_technology = modern_industry2
+				#			is_researching_technology = modern_industry3
+				#			has_tech = dispersed_industry
+				#			is_researching_technology = construction1
+				#			is_researching_technology = construction2
+				#			is_researching_technology = construction3
+				#			is_researching_technology = construction4
+				#			is_researching_technology = construction5
+				#			is_researching_technology = construction_a
+				#			is_researching_technology = construction_b
+				#			is_researching_technology = construction_c
+				#			is_researching_technology = construction_d
+				#			is_researching_technology = construction6
+				#			is_researching_technology = construction7
+				#			is_researching_technology = construction8
+				#			has_tech = expanded_industry1
+				#		}
+				#	}
+				#	is_researching_technology = concentrated_industry
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry2
+				#	#	date > 1936.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry3
+				#	#	date > 1937.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry4
+				#	#	date > 1939.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry5
+				#	#	date > 1941.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry_a
+				#	#	date > 1943.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry_b
+				#	#	date > 1945.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry_c
+				#	#	date > 1948.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = concentrated_industry_d
+				#	#	date > 1951.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = modern_industry1
+				#	#	date > 1945.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = modern_industry2
+				#	#	date > 1949.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = modern_industry3
+				#	#	date > 1953.01.01
+				#	#}
+				#	#is_researching_technology = construction1
+				#	#AND = {
+				#	#	is_researching_technology = construction2
+				#	#	date > 1936.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction3
+				#	#	date > 1937.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction4
+				#	#	date > 1939.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction5
+				#	#	date > 1941.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction_a
+				#	#	date > 1943.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction_b
+				#	#	date > 1945.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction_c
+				#	#	date > 1948.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction_d
+				#	#	date > 1951.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction6
+				#	#	date > 1945.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction7
+				#	#	date > 1949.01.01
+				#	#}
+				#	#AND = {
+				#	#	is_researching_technology = construction8
+				#	#	date > 1953.01.01
+				#	#}
+				#	has_tech = dispersed_industry
+				#}
+				#	
+			#}
+		}
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		complete_effect = {
+			if = {
+				limit = { is_researching_technology = concentrated_industry }
+				set_technology = { concentrated_industry = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry2 }
+				set_technology = { concentrated_industry2 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry3 }
+				set_technology = { concentrated_industry3 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry4 }
+				set_technology = { concentrated_industry4 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry5 }
+				set_technology = { concentrated_industry5 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry_a }
+				set_technology = { concentrated_industry_a = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry_b }
+				set_technology = { concentrated_industry_b = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry_c }
+				set_technology = { concentrated_industry_c = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = concentrated_industry_d }
+				set_technology = { concentrated_industry_d = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = modern_industry1 }
+				set_technology = { modern_industry1 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = modern_industry2 }
+				set_technology = { modern_industry2 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = modern_industry3 }
+				set_technology = { modern_industry3 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction1 }
+				set_technology = { construction1 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction2 }
+				set_technology = { construction2 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction3 }
+				set_technology = { construction3 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction4 }
+				set_technology = { construction4 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction5 }
+				set_technology = { construction5 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction_a }
+				set_technology = { construction_a = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction_b }
+				set_technology = { construction_b = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction_c }
+				set_technology = { construction_c = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction_d }
+				set_technology = { construction_d = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction6 }
+				set_technology = { construction6 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction7 }
+				set_technology = { construction7 = 1 }
+			}
+			else_if = {
+				limit = { is_researching_technology = construction8 }
+				set_technology = { construction8 = 1 }
+			}
+			else_if = {
+				limit = { 
+					or = {
+						has_tech = dispersed_industry
+					
+						has_tech = expanded_industry1
+					}
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 3.0
+					uses = 1
+					category = industry
+					category = dispersed_industry_category
+					category = construction_tech
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					uses = 1
+					ahead_reduction = 2
+					category = industry
+					category = dispersed_industry_category
+					category = construction_tech
+				}
+			}
+			
+		}
+
+		days_remove = 120
+
+		#cost = 50
+
+	}
+}

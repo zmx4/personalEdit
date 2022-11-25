@@ -1,0 +1,40 @@
+technologies = {
+	tech_better_pasd = {
+	
+		research_cost = 1
+	
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		production_speed_buildings_factor = 0.10
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		line_change_production_efficiency_factor = 0.2
+		production_factory_start_efficiency_factor = 0.05
+		global_building_slots_factor = 0.2
+		industry_repair_factor = 0.10
+		equipment_conversion_speed = 0.60
+		extra_paratrooper_supply_grace = 24
+	}
+	tech_better_pasda = {
+		research_cost = 1
+	
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			tank_welded_armorss
+			tank_gas_turbine_enginess
+			tank_gas_turbine_enginessa
+		}
+		enable_equipments = {
+			qwq_modern_tank_chassis_1
+		}
+		enable_subunits = {
+			commandos
+			commandos2
+		}
+	}
+}

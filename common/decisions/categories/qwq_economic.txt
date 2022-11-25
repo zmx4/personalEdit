@@ -1,0 +1,6 @@
+qwq_economic={
+	allowed = {
+		is_ai = no
+	}
+	priority = 10
+}
